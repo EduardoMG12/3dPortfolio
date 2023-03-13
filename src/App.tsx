@@ -24,14 +24,15 @@ export const Container = styled.div`
 const App: React.FC = () => {
 
   return (
-    <Container>
+    <>
       <GlobalStyle />
-      <NavBard />
-      <Hero />
-      <Who />
-      <Works />
-      <Contact />
-    </Container>
+      <Container>
+        <Hero />
+        <Who />
+        <Works />
+        <Contact />
+      </Container>
+    </>
   )
 }
 

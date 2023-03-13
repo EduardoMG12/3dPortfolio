@@ -38,7 +38,7 @@ export const ButtonLearn = styled.button<IPropsButton>`
   color: white;
   font-weight: 500;
   border: none;
-  width: ${props => props.typeButton == 1 ? "10rem" : props.typeButton == 2 ? "12rem" : "10rem"};
+  width: ${props => props.typeButton ?? "10rem"};
   padding: 0.1rem;
   border-radius: 0.5rem;
   cursor: pointer;

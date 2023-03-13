@@ -65,8 +65,8 @@ Desc.displayName = 'Contents.Desc';
 
 
 export interface IPropsButton {
-    childrenButton: ReactNode | string
-    typeButton?: number
+    childrenButton?: ReactNode | string
+    typeButton?: string
 }
 
 const Button: React.FC<IPropsButton> = ({ childrenButton, typeButton }) => <ButtonLearn typeButton={typeButton}>{childrenButton}</ButtonLearn>;

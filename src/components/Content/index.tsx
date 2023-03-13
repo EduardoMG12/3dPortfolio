@@ -7,7 +7,7 @@ interface IPropsContent {
     textSubtitle: string
     textDesc: string
     childrenButton: string | ReactNode
-    typeButton: number
+    typeButton: string
 }
 
 const Content: React.FC<IPropsContent> = ({ typeButton, flex, textTitle, textSubtitle, textDesc, childrenButton }) => {

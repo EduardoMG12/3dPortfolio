@@ -1,10 +1,9 @@
 import Contact from "./components/Contact"
-import Hero from "./components/Hero"
-import Who from "./components/Who"
-import Works from "./components/Works"
+import Hero from "@components/Hero"
+import Who from "@components/Who"
+import Works from "@components/Works"
 import styled from "styled-components"
 import background from '/public/images/background.jpeg'
-import NavBard from "./components/NavBar"
 import GlobalStyle from "@styles/GlobalStyle"
 
 export const Container = styled.div`

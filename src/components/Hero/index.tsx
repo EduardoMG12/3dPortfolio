@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../NavBar';
+import NavBar from '@components/NavBar';
 import coffee from '@images/coffee.png'
 import { Container, Section, ContentRight, Image } from './styles';
 import Content from '@components/Content';

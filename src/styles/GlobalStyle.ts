@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         list-style: none;
+        font-family: 'Roboto', sans-serif;
     }
     html{
         font-size: 62.5%;

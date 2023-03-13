@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from '../NavBar';
-import line from '@images/line.png'
+import NavBar from '@components/NavBar';
 import coffee from '@images/coffee.png'
-import { Container, Section, ContentLeft, Title, WhatWeDo, Line, Subtitle, Desc, Button, ContentRight, Image } from './styles';
+import { Container, Section, ContentRight, Image } from './styles';
+import Content from '@components/Content';
 
 const Hero: React.FC = () => {
   return (
@@ -10,15 +10,7 @@ const Hero: React.FC = () => {
       <NavBar />
 
       <Section>
-        <ContentLeft>
-          <Title>Think, Make, Solve</Title>
-          <WhatWeDo>
-            <Line src={line} />
-            <Subtitle>What we do</Subtitle>
-          </WhatWeDo>
-          <Desc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor</Desc>
-          <Button>Learn More</Button>
-        </ContentLeft>
+        <Content flex='2' textTitle='Think, Make, Solve' textSubtitle='What we do' textDesc='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor' childrenButton="Learn more" typeButton={"10rem"} />
         <ContentRight>
           {/* 3d model */}
           <Image src={coffee} />

@@ -1,4 +1,4 @@
-import Contact from "./components/Contact"
+import Contact from "@components/Contact"
 import Hero from "@components/Hero"
 import Who from "@components/Who"
 import Works from "@components/Works"

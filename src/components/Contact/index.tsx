@@ -1,7 +1,8 @@
+import Form from '@components/Form';
 import MapChart from '@components/MapChart';
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Section, LeftContent, Form, Title, Input, TextArea, Button, RightContent } from './styles';
+import { Container, Section, LeftContent, RightContent } from './styles';
 
 
 
@@ -10,13 +11,7 @@ const Contact: React.FC = () => {
     <Container>
         <Section>
             <LeftContent>
-                <Form>
-                    <Title>Contac Us</Title>
-                    <Input placeholder='name'/>
-                    <Input placeholder='email'/>
-                    <TextArea placeholder='Write your message' rows={10}/>
-                    <Button>Send</Button>
-                </Form>
+                <Form />
             </LeftContent>
             <RightContent><MapChart/></RightContent>
         </Section>

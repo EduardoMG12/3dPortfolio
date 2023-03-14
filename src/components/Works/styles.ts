@@ -33,7 +33,7 @@ export const ListItem = styled.li<IPropsListItem>`
   cursor: pointer;
   color: transparent;
   -webkit-text-stroke: 0.1rem white;
-    position: relative;
+  position: relative;
 
 
   ::after{

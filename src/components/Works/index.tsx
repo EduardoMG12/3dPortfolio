@@ -66,15 +66,12 @@ const Works: React.FC = () => {
   const renderMainSkill = () => {
     return (
       <p>
-        My main skill is developing with React and TypeScript, using
+        I specialize in React and TypeScript development, utilizing
         object-oriented programming concepts and design patterns to create
-        scalable and easily maintainable applications. I'm currently studying
-        the Next.js framework, which allows for creating web applications in
-        React with support for server-side rendering, route management,
-        performance optimization, and other features. I always strive to follow
-        best development practices, such as automated testing, documentation,
-        code versioning, to ensure the quality and security of the developed
-        applications.
+        scalable applications. Currently learning Next.js for web app creation
+        with added features. I prioritize best development practices for quality
+        and security, including automated testing, documentation, and code
+        versioning.
       </p>
     );
   };
@@ -161,7 +158,6 @@ const Works: React.FC = () => {
             </>
           </CanvasTemplate>
         </RightContent>
-        return
       </Section>
     </Container>
   );

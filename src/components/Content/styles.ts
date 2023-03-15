@@ -7,10 +7,18 @@ export const ContentsText = styled.div<IPropsContents>`
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-`;
+  @media only screen and (max-width:768px) {
+    flex:1;
+    align-items: center;
+  }
+  `;
 
 export const FirstTitle = styled.h1`
   font-size: 7.4rem;
+  @media only screen and (max-width:768px) {
+    text-align: center;
+  }
+  
 `;
 
 export const WhatWeDoOrAre = styled.div`
@@ -30,7 +38,10 @@ export const Secondtitle = styled.h2`
 export const Paragraph = styled.p`
   font-size: 2.4rem;
   color: lightgray;
-
+  @media only screen and (max-width:768px) {
+    padding: 2rem;
+    text-align: center;
+  }
 `;
 
 export const ButtonLearn = styled.button<IPropsButton>`

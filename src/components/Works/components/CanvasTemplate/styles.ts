@@ -14,7 +14,6 @@ export const Desc = styled.div<IPropsCanvasTemplate>`
     background-color: white;
     border-radius: 1rem;
     position: absolute;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,5 +21,24 @@ export const Desc = styled.div<IPropsCanvasTemplate>`
     font-weight: 700;
     font-size: 1.3rem;
     color: black;
-    }
+}
+    @media (max-width:1300px){
+            max-height: 15rem;
+            width: 40rem;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    @media (max-width:1140px){
+            max-height: 20rem;
+            max-width: 40rem;
+            top: 0;
+        }
+    @media (max-width:420px){
+            max-height: auto;
+            max-width: 90%;
+            top: 0;
+        }
 `;

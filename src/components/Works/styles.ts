@@ -7,6 +7,9 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  @media only screen and (max-width:1140px) {
+    height: 120vh;
+  }
 
 `;
 
@@ -14,18 +17,29 @@ export const Section = styled.section`
   width: 140rem;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width:1300px) {
+    width: 100%;
+  }
+  @media only screen and (max-width:1140px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const LeftContent = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    @media only screen and (max-width:1140px) {
+      padding: 2rem;
+  }
 `;
 
 
 export const List = styled.ul`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2rem;
 `;
 
@@ -36,6 +50,13 @@ export const ListItem = styled.li<IPropsListItem>`
   color: transparent;
   -webkit-text-stroke: 0.1rem white;
   position: relative;
+  white-space: nowrap;
+  @media only screen and (max-width:1140px) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width:768px) {
+    font-size: 2.4rem;
+  }
 
 
   ::after{

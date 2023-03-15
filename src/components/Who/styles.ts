@@ -5,7 +5,7 @@ export const Container = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
-`;
+  `;
 
 export const Section = styled.div`
   height: 100vh;
@@ -13,8 +13,15 @@ export const Section = styled.div`
   width: 140rem;
   display: flex;
   justify-content: space-between;
-`;
+  @media only screen and (max-width:1170px) {
+    width: 100%;
+    padding: 1rem;
+  }
+  `;
 
 export const ContentLeft = styled.div`
   flex: 1;
+  @media only screen and (max-width:1124px) {
+    display: none;
+  }
 `;

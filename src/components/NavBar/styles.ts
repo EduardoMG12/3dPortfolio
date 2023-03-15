@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Header = styled.header`
   display: flex;
   justify-content: center;
+  @media only screen and (max-width:1350px) {
+      width: 100%;
+      padding: 1rem;
+  }
   `;
 
 export const Container = styled.div`
@@ -11,21 +15,27 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
+    @media only screen and (max-width:1350px) {
+    width: 100%;
+  }
 `;
 
 export const Links = styled.div`
     display: flex;
     align-items: center;
     gap: 5rem;
-`;
+    `;
 
 export const Logo = styled.img`
     height: 5rem;
-`;
+    `;
 
 export const List = styled.ul`
     display: flex;
     gap: 2rem;
+    @media only screen and (max-width:468px) {
+        display: none;
+    }
 
 `;
 

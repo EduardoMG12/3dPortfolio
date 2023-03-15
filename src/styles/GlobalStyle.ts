@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     
     *{
+        overflow-x: hidden;
         padding: 0;
         box-sizing: border-box;
         margin: 0;

@@ -10,9 +10,9 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Hero />
-      {/* <Who />
+      <Who />
       <Works />
-      <Contact /> */}
+      <Contact />
     </Container>
   );
 };

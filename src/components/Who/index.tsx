@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Container, ContentLeft, Section } from "./styles";
 import Content from "@components/Content";
-import Cube from "@components/Cube";
+import Cube from "@components/Who/components/Cube";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 

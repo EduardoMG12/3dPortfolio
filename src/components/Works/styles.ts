@@ -6,6 +6,8 @@ export const Container = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  position: relative;
+
 `;
 
 export const Section = styled.section`

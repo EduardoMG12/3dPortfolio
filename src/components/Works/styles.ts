@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   height:100vh;
   scroll-snap-align: center;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   position: relative;

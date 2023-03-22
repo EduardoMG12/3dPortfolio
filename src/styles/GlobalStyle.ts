@@ -9,6 +9,11 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         list-style: none;
         font-family: 'Roboto', sans-serif;
+        color: #B9D6F2;
+        border: none;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
     }
     html{
         font-size: 62.5%;

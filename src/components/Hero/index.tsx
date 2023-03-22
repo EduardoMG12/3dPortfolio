@@ -4,12 +4,12 @@ import notebook from "@images/notebook.png";
 import { Container, Section, ContentRight, Image } from "./styles";
 import Content from "@components/Content";
 import { Canvas } from "@react-three/fiber";
-import { MeshDistortMaterial, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import Sphere from "./components/Sphere";
 
 const Hero: React.FC = () => {
   return (
-    <Container>
+    <Container id="Hero">
       <NavBar />
 
       <Section>
@@ -19,7 +19,6 @@ const Hero: React.FC = () => {
           textSubtitle="What we do"
           textDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor"
           childrenButton="Learn more"
-          typeButton={"10rem"}
         />
         <ContentRight>
           <Canvas>

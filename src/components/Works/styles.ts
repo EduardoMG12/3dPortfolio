@@ -48,11 +48,12 @@ export const ListItem = styled.li<IPropsListItem>`
   font-weight: bold;
   cursor: pointer;
   color: transparent;
-  -webkit-text-stroke: 0.1rem white;
+  -webkit-text-stroke: 0.08rem #B9D6F2;
   position: relative;
   white-space: nowrap;
   @media only screen and (max-width:1140px) {
     font-size: 4rem;
+    -webkit-text-stroke: 0.08rem #061A40;
   }
   @media only screen and (max-width:768px) {
     font-size: 2.4rem;
@@ -64,7 +65,7 @@ export const ListItem = styled.li<IPropsListItem>`
     position: absolute;
     top: 0;
     left: 0;
-    color: cyan;
+    color: #0353A4;
     width: 0;
     overflow: hidden;
     white-space: nowrap;

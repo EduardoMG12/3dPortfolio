@@ -2,11 +2,11 @@
 
 This is a portfolio project created with Vite and developed in React with TypeScript, styled components, using the Three.js libraries for creating and adding 3D models (all models used are credited below), EmailJS for sending the form, and React-Simple-Maps for adding the map.
 
-<a href="https://3d-portfolio-charles-eduardo-jbbcudqvh-eduardomg12.vercel.app/"><img src="public/images/gifWebSite.gif" alt="Awesome README Templates" /></a>
+<a href="https://3d-portfolio-charles-eduardo.vercel.app/"><img src="public/images/gifWebSite.gif" alt="Awesome README Templates" /></a>
 
 #### Show project
 
-- [Portfolio](https://3d-portfolio-charles-eduardo-jbbcudqvh-eduardomg12.vercel.app/)
+- [Portfolio](https://3d-portfolio-charles-eduardo.vercel.app/)
 
 #### Prerequisites
 

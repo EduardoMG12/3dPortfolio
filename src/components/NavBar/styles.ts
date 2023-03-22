@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const Header = styled.header`
   display: flex;
   justify-content: center;
+  width: 100vw;
+  font-size: 1.7rem;
   @media only screen and (max-width:1350px) {
+      font-size: 1rem;
       width: 100%;
       padding: 1rem
   }
@@ -19,7 +22,7 @@ export const Container = styled.div`
     @media only screen and (max-width:1350px) {
     width: 100%;
   }
-`;
+  `;
 
 export const Links = styled.div`
     display: flex;
@@ -28,7 +31,11 @@ export const Links = styled.div`
     `;
 
 export const Logo = styled.img`
-    height: 5rem;
+    height: 8rem;
+    color: #B9D6F2;
+    @media only screen and (max-width:1350px) {
+        height: 5rem;
+    }
     `;
 
 export const List = styled.ul`
@@ -57,7 +64,7 @@ export const Icon = styled.img`
 export const Button = styled.button`
     width: 10rem;
     padding: 1rem;
-    background-color: #da4ea2;
+    background-color: #061A40;
     color: white;
     border: none;
     border-radius: 0.5rem;

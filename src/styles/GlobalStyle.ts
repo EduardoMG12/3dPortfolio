@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
     html{
         font-size: 62.5%;
     }
+    body{
+        div{
+            overflow-y: hidden;
+        }
+    }
 `
 
 

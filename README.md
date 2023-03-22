@@ -4,6 +4,10 @@ This is a portfolio project created with Vite and developed in React with TypeSc
 
 <a href="https://3d-portfolio-charles-eduardo-jbbcudqvh-eduardomg12.vercel.app/"><img src="public/images/gifWebSite.gif" alt="Awesome README Templates" /></a>
 
+#### Show project
+
+- [Portfolio](https://3d-portfolio-charles-eduardo-jbbcudqvh-eduardomg12.vercel.app/)
+
 #### Prerequisites
 
 - Node.js (v14.15.1 ou superior)

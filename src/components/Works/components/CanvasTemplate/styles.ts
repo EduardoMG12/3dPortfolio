@@ -8,6 +8,10 @@ export const Desc = styled.div<IPropsCanvasTemplate>`
     : props.position === 3 ? "top: 10rem; right: 30rem"
     : props.position === 4 ? "top: 10rem; right: 10rem"
     : props.position === 5 ? "top: 10rem; right: 10rem": "")}
+
+    ${props => (props.position ? "display:block; visibility: visible;"
+   : "display: none; visibility: hidden;")}
+
     width: 20rem;
     max-height: 90rem;
     padding: 2rem;

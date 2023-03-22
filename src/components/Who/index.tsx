@@ -7,7 +7,7 @@ import { OrbitControls } from "@react-three/drei";
 
 const Who: React.FC = () => {
   return (
-    <Container>
+    <Container id="Studio">
       <Section>
         <ContentLeft>
           <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
@@ -25,7 +25,6 @@ const Who: React.FC = () => {
           textSubtitle="What we are"
           textDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor"
           childrenButton="see our projects"
-          typeButton={"12rem"}
         />
       </Section>
     </Container>

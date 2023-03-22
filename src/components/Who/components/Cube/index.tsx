@@ -1,11 +1,6 @@
-import React, { ReactNode, Suspense, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import {
-  OrbitControls,
-  PerspectiveCamera,
-  RenderTexture,
-  Text,
-} from "@react-three/drei";
+import React, { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { PerspectiveCamera, RenderTexture, Text } from "@react-three/drei";
 
 const Cube: React.FC = () => {
   const textRef = useRef<any>();
@@ -22,8 +17,8 @@ const Cube: React.FC = () => {
         <meshStandardMaterial>
           <RenderTexture attach="map">
             <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-            <color attach="background" args={["#0f0f0f"]} />
-            <Text ref={textRef} fontSize={0.5} color="#4887fc">
+            <color attach="background" args={["#61A5C2"]} />
+            <Text ref={textRef} fontSize={0.5} color="#061A40">
               HYPE WAVE
             </Text>
           </RenderTexture>

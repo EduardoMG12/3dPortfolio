@@ -16,16 +16,7 @@ import {
   Section,
 } from "./styles";
 
-const data = [
-  "Web Design",
-  "Main skill",
-  "Secondary skill",
-  "Social midias",
-  // React
-  // TS
-  // Java
-  // Next
-];
+const data = ["Web Design", "Main skill", "Secondary skill", "Social midias"];
 
 export interface IPropsListItem {
   text?: string;
@@ -119,7 +110,7 @@ const Works: React.FC = () => {
     }
   };
   return (
-    <Container>
+    <Container id="Works">
       <Section>
         <LeftContent>
           <List>

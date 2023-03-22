@@ -1,10 +1,9 @@
 import React from "react";
+import { Container } from "./styles";
 import Contact from "@components/Contact";
 import Hero from "@components/Hero";
 import Who from "@components/Who";
 import Works from "@components/Works";
-
-import { Container } from "./styles";
 
 const Home: React.FC = () => {
   return (

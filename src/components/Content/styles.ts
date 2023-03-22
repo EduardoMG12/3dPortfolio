@@ -15,6 +15,7 @@ export const ContentsText = styled.div<IPropsContents>`
 
 export const FirstTitle = styled.h1`
   font-size: 7.4rem;
+  color: #B9D6F2;
   @media only screen and (max-width:768px) {
     text-align: center;
   }
@@ -24,7 +25,11 @@ export const FirstTitle = styled.h1`
 export const WhatWeDoOrAre = styled.div`
   display: flex;
   align-content: center;
+  justify-content: flex-start;
   gap: 1rem;
+  & img{
+    transform: translateY(5px);
+  }
 `;
 
 export const ImageLine = styled.img`
@@ -32,12 +37,12 @@ export const ImageLine = styled.img`
 `;
 
 export const Secondtitle = styled.h2`
-  color: #da4ea2
+  color: #061A40;
 `;
 
 export const Paragraph = styled.p`
   font-size: 2.4rem;
-  color: lightgray;
+  color: #B9D6F2;
   @media only screen and (max-width:768px) {
     padding: 2rem;
     text-align: center;
@@ -45,12 +50,12 @@ export const Paragraph = styled.p`
 `;
 
 export const ButtonLearn = styled.button<IPropsButton>`
-  background-color: #da4ea2;
-  color: white;
+  background-color: #061A40;
+  color: #B9D6F2;
   font-weight: 500;
   border: none;
-  width: ${props => props.typeButton ?? "10rem"};
-  padding: 0.1rem;
+  width: fit-content;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   cursor: pointer;
 `;

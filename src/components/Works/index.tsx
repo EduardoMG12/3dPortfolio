@@ -4,6 +4,7 @@ import Cloud from "./components/models3d/Cloud";
 import Coffee from "./components/models3d/Coffee";
 import JavaLogo from "./components/models3d/JavaLogo";
 import NotebookLayout from "./components/models3d/NotebookLayout";
+import { OfficeDrawer } from "./components/models3d/OfficeDrawer";
 import PictureWave from "./components/models3d/PictureWave";
 import ReactIcon from "./components/models3d/ReactIcon";
 
@@ -16,7 +17,13 @@ import {
   Section,
 } from "./styles";
 
-const data = ["Web Design", "Main skill", "Secondary skill", "Social midias"];
+const data = [
+  "Web Design",
+  "Main skill",
+  "Secondary skill",
+  "Social midias",
+  "Documentation",
+];
 
 export interface IPropsListItem {
   text?: string;
@@ -37,6 +44,8 @@ const Works: React.FC = () => {
         return randomBoolean ? 3 : 4;
       case "Social midias":
         return 5;
+      case "Documentation":
+        return 6;
       default:
         return null; // ou um valor padrão adequado para o seu caso
     }
@@ -95,6 +104,17 @@ const Works: React.FC = () => {
     );
   };
 
+  const renderDocumentation = () => {
+    return (
+      <p>
+        The project documentation and my github:
+        <a href="https://github.com/EduardoMG12/3dPortfolio" target={"_blank"}>
+          here
+        </a>
+      </p>
+    );
+  };
+
   const descriptionAndText3dModel = () => {
     switch (model3d) {
       case "Web Design":
@@ -105,6 +125,8 @@ const Works: React.FC = () => {
         return randomBoolean ? renderSecondarySkill() : renderEasterEgg();
       case "Social midias":
         return renderSocialMedia();
+      case "Documentation":
+        return renderDocumentation();
       default:
         return null;
     }
@@ -143,6 +165,8 @@ const Works: React.FC = () => {
                 <Coffee />
               ) : model3d === "Social midias" ? (
                 <Cloud />
+              ) : model3d === "Documentation" ? (
+                <OfficeDrawer />
               ) : (
                 <PictureWave />
               )}

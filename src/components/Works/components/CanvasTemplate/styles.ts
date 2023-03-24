@@ -7,7 +7,8 @@ export const Desc = styled.div<IPropsCanvasTemplate>`
     : props.position === 2 ? "bottom: 20rem; right: 5rem;"
     : props.position === 3 ? "top: 10rem; right: 30rem"
     : props.position === 4 ? "top: 10rem; right: 10rem"
-    : props.position === 5 ? "top: 10rem; right: 10rem": "")}
+    : props.position === 5 || props.position === 6 ? "top: 10rem; right: 10rem"
+    :"")}
 
     ${props => (props.position ? "display:block; visibility: visible;"
    : "display: none; visibility: hidden;")}

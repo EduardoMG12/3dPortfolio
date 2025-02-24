@@ -12,7 +12,10 @@ import { useGLTF } from "@react-three/drei";
 
 function Coffee(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/Coffee-transformed.glb");
+  const { nodes, materials } = useGLTF("/Coffee-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   return (
     <group {...props} dispose={null}>
       <group position={[2.85, 0, -0.51]} rotation={[-Math.PI / 2, 0, 0.57]}>

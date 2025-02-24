@@ -12,10 +12,13 @@ import { useGLTF } from "@react-three/drei";
 
 function PictureWave(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/picture-transformed.glb");
+  const { nodes, materials } = useGLTF("/picture-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   return (
     <group {...props} dispose={null}>
-      <group position={[0, -0.34, 0.37]} scale={0.01}>
+      <group position={[0, -0.34, 0.37]} scale={0.1}>
         <group position={[-10.01, -6.74, -0.99]}>
           <mesh
             geometry={nodes.Object_3.geometry}

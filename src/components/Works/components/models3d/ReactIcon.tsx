@@ -12,11 +12,14 @@ import { useGLTF } from "@react-three/drei";
 
 function ReactIcon(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/reactLogo3d-transformed.glb");
+  const { nodes, materials } = useGLTF("/reactLogo3d-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
 
   return (
     <group {...props} dispose={null}>
-      <group scale={0.01}>
+      <group scale={0.006}>
         <mesh
           geometry={nodes["React-Logo_Material002_0"].geometry}
           material={materials["Material.002"]}

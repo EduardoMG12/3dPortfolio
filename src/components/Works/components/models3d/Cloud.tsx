@@ -12,10 +12,13 @@ import { useGLTF } from "@react-three/drei";
 
 function Cloud(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/Cloud-transformed.glb");
+  const { nodes, materials } = useGLTF("/Cloud-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   return (
     <group {...props} dispose={null}>
-      <group scale={0.01}>
+      <group position={[-0.7, 0.4, 0]} scale={0.0022}>
         <mesh
           geometry={nodes.th_bolt001_lighiting_0.geometry}
           material={materials.lighiting}

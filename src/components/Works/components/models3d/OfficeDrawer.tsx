@@ -12,9 +12,12 @@ import { useGLTF } from "@react-three/drei";
 
 export function OfficeDrawer(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/officeDrawer-transformed.glb");
+  const { nodes, materials } = useGLTF("/officeDrawer-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={0.6}>
       <group
         position={[2.77, 1.07, 0.02]}
         rotation={[0, 0, -Math.PI / 2]}

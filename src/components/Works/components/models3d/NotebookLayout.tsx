@@ -12,9 +12,13 @@ import { useGLTF } from "@react-three/drei";
 
 function NotebookLayout(props: any) {
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/computer-transformed.glb");
+  const { nodes, materials } = useGLTF("/computer-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   return (
     <group {...props} dispose={null}>
+        <group position={[0, -0.34, 0.37]} scale={0.4}>
       <mesh
         geometry={nodes.Object_4.geometry}
         material={materials.palette}
@@ -30,6 +34,7 @@ function NotebookLayout(props: any) {
         material={materials["palette.002"]}
         rotation={[Math.PI / 2, 0, 0]}
       />
+      </group>
     </group>
   );
 }

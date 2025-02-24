@@ -13,11 +13,15 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 function JavaLogo(props: any) {
   const group = useRef();
   // @ts-ignore
-  const { nodes, materials, animations } = useGLTF("/javaLogo-transformed.glb");
+  const { nodes, materials, animations } = useGLTF("/javaLogo-transformed.glb")as unknown as {
+    nodes: any;
+    materials: any;
+  };
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
+      <group scale={0.7}>
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="Root">
             <group name="Cube">
@@ -76,6 +80,7 @@ function JavaLogo(props: any) {
                 material={materials.Material}
               />
             </group>
+          </group>
           </group>
         </group>
       </group>

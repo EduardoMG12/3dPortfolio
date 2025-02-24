@@ -7,8 +7,7 @@ import {
   Marker
 } from "react-simple-maps";
 
-const geoUrl =
-  "https://raw.githubusercontent.com/deldersveld/topojson/master/continents/south-america.json";
+const geoUrl = "/brazil-states.geojson";
 
 const markers = [
   { markerOffset: 25, name: "Paraná", coordinates: [-52.681080, -26.216468] as [number, number] },
@@ -21,8 +20,8 @@ const MapChart = () => {
     <ComposableMap
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
-        rotate: [58, 20, 0],
-        scale: 800
+        rotate: [58, 15, 0],
+        scale: 1000
       }}
       style={{width:"100%", height:"100%"}}
     >
@@ -55,7 +54,7 @@ const MapChart = () => {
           <text
             textAnchor="middle"
             y={markerOffset}
-            style={{ fontFamily: "system-ui", fill: "#5D5A6D" }}
+            style={{ fontFamily: "system-ui", fill: "#5D5A6D", fontWeight: "bold" }}
           >
             {name}
           </text>

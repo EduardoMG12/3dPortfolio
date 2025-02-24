@@ -85,5 +85,8 @@ export const ListItem = styled.li<IPropsListItem>`
 `;
 
 export const RightContent = styled.div`
-   flex: 1;
-  `;
+  width: 80vw;
+  height: 80vh;
+  max-width: 1200px;
+  flex:1
+`;

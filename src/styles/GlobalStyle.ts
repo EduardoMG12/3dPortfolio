@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
         outline: none;
         list-style: none;
         text-decoration: none;
+        user-select: none;
     }
     html{
         font-size: 62.5%;

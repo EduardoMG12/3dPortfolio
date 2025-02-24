@@ -23,8 +23,9 @@ const Who: React.FC = () => {
           flex="1"
           textTitle="Think outside the square space"
           textSubtitle="What we are"
-          textDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor"
+          textDesc="We create customized digital solutions for businesses of all sizes."
           childrenButton="see our projects"
+          childrenButtonLink="https://www.github.com/EduardoMG12"
         />
       </Section>
     </Container>

@@ -17,8 +17,9 @@ const Hero: React.FC = () => {
           flex="2"
           textTitle="Think, Make, Solve"
           textSubtitle="What we do"
-          textDesc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor"
+          textDesc="🚀 We turn ideas into innovative digital experiences."
           childrenButton="Learn more"
+          childrenButtonLink="https://www.linkedin.com/in/eduardomg12/"
         />
         <ContentRight>
           <Canvas>

@@ -36,7 +36,9 @@ const NavBar: React.FC = () => {
         </Links>
         <Icons>
           <Icon src={searchIcon} />
+          <a href="#ContactUs">
           <Button>Hire Now</Button>
+          </a>
         </Icons>
       </Container>
     </Header>

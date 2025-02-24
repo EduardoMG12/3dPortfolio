@@ -7,6 +7,7 @@ interface IPropsContent {
   textSubtitle: string;
   textDesc: string;
   childrenButton: string | ReactNode;
+  childrenButtonLink?: string;
 }
 
 const Content: React.FC<IPropsContent> = ({
@@ -15,6 +16,7 @@ const Content: React.FC<IPropsContent> = ({
   textSubtitle,
   textDesc,
   childrenButton,
+  childrenButtonLink
 }) => {
   return (
     <Contents.Root
@@ -29,7 +31,14 @@ const Content: React.FC<IPropsContent> = ({
           ]}
         />,
         <Contents.Desc key="desc" textDesc={textDesc} />,
-        <Contents.Button key="button" childrenButton={childrenButton} />,
+        <>
+        {childrenButtonLink? (
+            <a href={childrenButtonLink} target="_blank">
+            <Contents.Button key="button" childrenButton={childrenButton} />,
+            </a>
+        ) :( <Contents.Button key="button" childrenButton={childrenButton} />)
+    }
+    </>
       ]}
     />
   );

@@ -53,11 +53,7 @@ const Works: React.FC = () => {
     const renderWebDesign = () => {
         return (
             <p>
-                Web prototyping with Figma, UI and UX Design: I use UI and UX Design
-                techniques to create intuitive and user-friendly interfaces that meet
-                the needs and expectations of users. I always strive to follow best
-                design practices, such as color selection, typography, and screen
-                layout, to create beautiful and functional interfaces.
+              We create modern and responsive interfaces for your website.
             </p>
         );
     };
@@ -65,12 +61,7 @@ const Works: React.FC = () => {
     const renderMainSkill = () => {
         return (
             <p>
-                I specialize in React and TypeScript development, utilizing
-                object-oriented programming concepts and design patterns to create
-                scalable applications. Currently learning Next.js for web app creation
-                with added features. I prioritize best development practices for quality
-                and security, including automated testing, documentation, and code
-                versioning.
+                Our core expertise is web development, Typescript, React, Next, NestJs.
             </p>
         );
     };
@@ -78,12 +69,7 @@ const Works: React.FC = () => {
     const renderSecondarySkill = () => {
         return (
             <p>
-                I also have skills in Java, one of the most widely used programming
-                languages in the corporate world. Although my main focus is on web
-                development, I have experience developing applications with Java, using
-                the SpringBoot framework. I am always looking to improve my Java skills,
-                whether through self-study or specialized courses, in order to meet the
-                needs and demands of future projects that may arise.
+                Other skills include Java, Spring, Figma, Python, FastAPI, and more.
             </p>
         );
     };
@@ -96,7 +82,7 @@ const Works: React.FC = () => {
         return (
             <p>
                 My social media and other contact methods are linked:
-                <a href="https://beacons.ai/charlesmellog" target={"_blank"}>
+                <a href="https://beaconsai.com/charlesmellog" target={"_blank"}>
                     here
                 </a>
             </p>

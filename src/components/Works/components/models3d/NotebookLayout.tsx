@@ -18,7 +18,7 @@ function NotebookLayout(props: any) {
   };
   return (
     <group {...props} dispose={null}>
-        <group position={[0, -0.34, 0.37]} scale={0.4}>
+        <group position={[0, -0.534, 0.37]} scale={0.4}>
       <mesh
         geometry={nodes.Object_4.geometry}
         material={materials.palette}
